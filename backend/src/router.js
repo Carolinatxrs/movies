@@ -1,5 +1,6 @@
 const express = require('express');
 const filmesController = require('./controllers/filmesController');
+const filmesMiddleware = require('./middlewares/filmesMiddleware');
 
 const router = express.Router();
 
@@ -7,6 +8,6 @@ const router = express.Router();
 router.get('/filmes', filmesController.getAll);
 
 /* Endpoint CREATE - [POST] / filmes */
-router.post('/filmes', filmesController.create);
+router.post('/filmes', filmesMiddleware.middleBody, filmesController.create);
 
 module.exports = router;

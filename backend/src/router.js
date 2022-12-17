@@ -1,7 +1,9 @@
 const express = require('express');
+const filmesController = require('./controllers/filmesController');
 
 const router = express.Router();
 
-router.get('/', (request, response) => response.status(200).send('Router show'));
+/* Endpoint READ ALL - [GET] / filmes */
+router.get('/filmes', filmesController.getAll);
 
 module.exports = router;

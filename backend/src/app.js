@@ -3,7 +3,8 @@ const router = require('./router');
 
 const app = express();
 
+//SINALIZANDO JSON E AS ROTAS
+app.use(express.json());
 app.use(router);
-// app.get('/', (request, response) => response.status(200).send('Olá!'));
 
 module.exports = app;

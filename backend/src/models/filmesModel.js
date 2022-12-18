@@ -8,6 +8,14 @@ const getAll = async() => {
   return filmes;
 };
 
+/* LISTAR ID */
+const getId = async(id) => {
+  const sql = 'SELECT * FROM filmes WHERE id = ?';
+  const [filmeId] = await (await connection).execute(sql, [id]);
+  
+  return filmeId;
+};
+
 /* CADASTRAR FILME */
 const create = async(dados) => {
   const {titulo, descricao, autor, imagem} = dados;
@@ -20,5 +28,6 @@ const create = async(dados) => {
 
 module.exports = {
   getAll,
-  create
+  create,
+  getId
 };

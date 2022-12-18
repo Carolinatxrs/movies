@@ -5,13 +5,20 @@ const getAll = async(request, response) => {
   return response.status(200).json(filmes);
 };
 
+const getId = async(request, response) => {
+  const {id} = request.params;
+
+  const filmeId = await filmesModel.getId(id);
+  return response.status(200).json(filmeId);
+};
+
 const create = async(request, response) => {
   const createFilm = await filmesModel.create(request.body);
   return response.status(201).json(createFilm);
-  // return response.status(201).json(request.body);
 };
 
 module.exports = {
   getAll,
-  create
+  create,
+  getId
 };

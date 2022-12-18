@@ -17,11 +17,12 @@ const getId = async(id) => {
 };
 
 /* CADASTRAR FILME */
-const create = async(dados) => {
-  const {titulo, descricao, autor, imagem} = dados;
+const create = async(dados, file) => {
+  const {titulo, descricao, autor} = dados;
+  const {filename} = file;
 
   const sql = 'INSERT INTO filmes (titulo, descricao, autor, imagem) VALUES (?, ?, ?, ?)';
-  const [createFilm] = await (await connection).execute(sql, [titulo, descricao, autor, 'foto.png']);
+  const [createFilm] = await (await connection).execute(sql, [titulo, descricao, autor, filename]);
 
   return {insertId: createFilm.insertId};
 }

@@ -13,7 +13,7 @@ const getId = async(request, response) => {
 };
 
 const create = async(request, response) => {
-  const createFilm = await filmesModel.create(request.body);
+  const createFilm = await filmesModel.create(request.body, request.file);
   return response.status(201).json(createFilm);
 };
 

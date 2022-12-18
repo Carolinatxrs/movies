@@ -1,2 +1,6 @@
+# BACK
 backend/node_modules
 backend/.env
+
+# FRONT
+frontend/node_modules

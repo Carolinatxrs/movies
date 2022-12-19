@@ -11,10 +11,10 @@
       <div id="menu-items" :class="{active:menuActive}">        
         <img alt="logo" id="menu-logo" src="https://creathus.org.br/wp-content/uploads/2021/12/Prancheta-449-copia-1024x215.png">
         <ul>
-          <li><a href="/filmes">Home</a></li>
-          <li><a href="/cadastrar">Perfil</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/perfil">Perfil</a></li>
           <li><a href="/cadastrar">Adicionar</a></li>
-          <li><a href="/cadastrar">Buscar</a></li>
+          <li><a href="/buscar">Buscar</a></li>
         </ul>
       </div>
     </nav>

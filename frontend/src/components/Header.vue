@@ -4,7 +4,7 @@
 
       <a href="/"><img alt="logo" id="logo" src="https://creathus.org.br/wp-content/uploads/2021/12/Prancheta-449-copia-1024x215.png"></a>
 
-      <img v-on:click="openMenu" alt="Abrir menu" id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg">
+      <img v-on:click="openMenu" alt="Abrir menu" id="menu-button" src="https://icon-library.com/images/svg-menu-icon/svg-menu-icon-22.jpg">
 
       <div v-on:click="closeMenu" id="menu-overlay" v-if="menuActive"></div>
       

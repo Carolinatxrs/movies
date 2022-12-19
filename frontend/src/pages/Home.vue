@@ -58,6 +58,7 @@ main{
   width: 100%;
   margin-top: 0;
   margin-top: 10px;
+  box-shadow: rgb(203 72 40 / 35%) 0px 5px 15px;
 }
 
 .filme div{
@@ -67,7 +68,7 @@ main{
 }
 
 .filme-title{
-  margin-bottom: 10px;
+  margin: 15px 10px;
 }
 
 @media (min-width: 700px){

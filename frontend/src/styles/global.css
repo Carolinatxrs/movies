@@ -2,9 +2,9 @@
   --color-background:#F3F3F3;
   --color-background-nav:#2B3D50;
   --color-background-home:#344960;
-  --color-text-light:#EDEDED;
+  --color-text-light: #CB4828;
   --color-text-title: #FF5733;
-  --color-text-dark:#FF5733;
+  --color-text-dark: #EB6440;
 }
 
 *{
